@@ -1,0 +1,36 @@
+<archetype-descriptor xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 https://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd" name="my-archetype-id">
+    <fileSets>
+        <fileSet filtered="true" packaged="true">
+            <directory>src/main/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory></directory>
+            <includes>
+                <include>README.md</include>
+                <include>.gitignore</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+
+    <requiredProperties>
+        <requiredProperty key="groupId">
+            <defaultValue>com.san</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="artifactId">
+            <defaultValue>to-the-moon</defaultValue>
+        </requiredProperty>
+
+        <requiredProperty key="version">
+            <defaultValue>1.0.0</defaultValue>
+        </requiredProperty>
+
+        <!--JUnit version to use in generated project-->
+        <requiredProperty key="junit-version">
+            <defaultValue>4.10</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+</archetype-descriptor>

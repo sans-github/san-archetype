@@ -1,0 +1,34 @@
+# Mac OSX system files
+*.bak
+.DS_Store
+.localized
+# Temporary files
+*~
+
+# Log files
+*.log
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+*.rdb
+
+# Build
+target/
+
+**/.DS_store
+# git properties file
+git.properties
+zookeeper.out
+
+.sass-cache/
+
+.vscode/
+
+#Eclipse
+*.settings
+*.project
+*.classpath
+*.springBeans
