@@ -8,7 +8,12 @@
             </includes>
         </fileSet>
         <fileSet>
-            <directory></directory>
+            <directory filtered="true" packaged="true">.vscode</directory>
+            <includes>
+                <include>launch.json</include>
+            </includes>
+        </fileSet>
+        <fileSet>
             <includes>
                 <include>README.md</include>
                 <include>.gitignore</include>
@@ -17,13 +22,15 @@
     </fileSets>
 
     <requiredProperties>
+        <requiredProperty key="boo">
+            <defaultValue>hoo</defaultValue>
+        </requiredProperty>
         <requiredProperty key="groupId">
             <defaultValue>com.san</defaultValue>
         </requiredProperty>
         <requiredProperty key="artifactId">
             <defaultValue>to-the-moon</defaultValue>
         </requiredProperty>
-
         <requiredProperty key="version">
             <defaultValue>1.0.0</defaultValue>
         </requiredProperty>
