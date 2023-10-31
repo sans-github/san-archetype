@@ -7,8 +7,8 @@
                 <include>**/*.java</include>
             </includes>
         </fileSet>
-        <fileSet>
-            <directory filtered="true" packaged="true">.vscode</directory>
+        <fileSet filtered="true">
+            <directory>.vscode</directory>
             <includes>
                 <include>launch.json</include>
             </includes>
@@ -22,9 +22,6 @@
     </fileSets>
 
     <requiredProperties>
-        <requiredProperty key="boo">
-            <defaultValue>hoo</defaultValue>
-        </requiredProperty>
         <requiredProperty key="groupId">
             <defaultValue>com.san</defaultValue>
         </requiredProperty>

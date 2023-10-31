@@ -2,20 +2,20 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "mainClass": "com.san.App",
+      "mainClass": "${package}.App",
       "type": "java",
       "name": "Launch-0-param",
       "request": "launch"
     },
     {
-      "mainClass": "com.san.App",
+      "mainClass": "${package}.App",
       "type": "java",
       "name": "Launch-1-param",
       "request": "launch",
       "args": "--help"
     },
     {
-      "mainClass": "com.san.App",
+      "mainClass": "${package}.App",
       "type": "java",
       "name": "Launch-2-param",
       "request": "launch",
@@ -23,6 +23,18 @@
         "--foo", "bar",
         "--lulu", "fifi"
       ]
+    },
+    {
+      "mainClass": "${package}.App",
+      "type": "java",
+      "name": "Launch-3-param",
+      "request": "launch",
+      "args": [
+        "-f", "/tmp/Input.csv",
+        "-o", "/tmp/Output.csv",
+        "-a", "sort"
+      ]
     }
+
   ]
 }
